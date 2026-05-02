@@ -1,19 +1,70 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Stanly Samit | Product Designer</title>
-      <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <div class="glass">
-          <h1>Stanly Samit</h1>
-          <p>Product Designer & SaaS Architect</p>
-        <div class="card">
-            <h2>Portfolio</h2>
-            <p>Glassmorphism Design</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanly Sam | Product Designer & SaaS Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <nav>
+        <div class="logo">STANLY<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Specialization</a></li>
+            <li><a href="#contact" class="cta-btn">Get In Touch</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h2 class="reveal-text">Architecture meets Aesthetics</h2>
+            <h1 class="gradient-text">Product Designer & <br>SaaS Architect</h1>
+            <p class="hero-sub">Crafting high-conversion digital experiences and scalable cloud infrastructures. Specialized in the 365/Azure ecosystem.</p>
+            <div class="hero-actions">
+                <a href="#work" class="primary-btn">View Projects</a>
+                <a href="#contact" class="secondary-btn">Let's Talk</a>
+            </div>
         </div>
-      </div>
-  </body>
-  </html>
+        <div class="blob"></div>
+    </header>
+    <section id="skills" class="features">
+        <div class="section-tag">Expertise</div>
+        <h3>The 360° Digital Approach</h3>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">🎨</div>
+                <h4>Product Design</h4>
+                <p>User-centric UI/UX focused on conversion and premium aesthetics.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">☁️</div>
+                <h4>SaaS Architecture</h4>
+                <p>Designing scalable systems using Azure and Microsoft 365 environments.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚙️</div>
+                <h4>Automation</h4>
+                <p>Streamlining operations through AI-driven workflows and CI/CD pipelines.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Ready to build the future?</h3>
+            <p>Currently accepting select projects for Q3 2026.</p>
+            <a href="mailto:stanlysamit@gmail.com" class="email-link">stanlysamit@gmail.com</a>
+        </div>
+    </footer>
+    <script>
+        const glow = document.querySelector('.cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.pageX + 'px';
+            glow.style.top = e.pageY + 'px';
+        });
+    </script>
+</body>
+</html>
